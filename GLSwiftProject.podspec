@@ -5,13 +5,12 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "swift版本自用框架"
 
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "swift版本自用框架"
 
-  s.homepage     = "http://github.com/hbjsgl/GLSwiftProject"
+  s.homepage     = "https://www.jianshu.com/u/c6de8b9d98fa"
 
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
   s.author             = { "郭磊" => "hbjsgl@foxmail.com" }
@@ -19,10 +18,10 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "http://github.com/hbjsgl/GLSwiftProject.git", :tag => s.version}
+  s.source       = { :git => "https://github.com/hbjsgl/GLSwiftProject.git", :tag => s.version}
 
 
-  s.source_files  = "GLSwiftProject"
+  s.source_files  = "GLSwiftProject/GLSwiftProject"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
