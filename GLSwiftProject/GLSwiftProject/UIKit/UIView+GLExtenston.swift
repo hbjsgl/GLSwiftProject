@@ -1,9 +1,9 @@
 //
-//  GLUIViewExtenston.swift
+//  UIView+GLExtenston.swift
 //  GLSwiftProject
 //
-//  Created by 郭磊 on 2018/11/6.
-//  Copyright © 2018 郭磊. All rights reserved.
+//  Created by 郭磊 on 2019/1/18.
+//  Copyright © 2019 郭磊. All rights reserved.
 //
 
 import UIKit

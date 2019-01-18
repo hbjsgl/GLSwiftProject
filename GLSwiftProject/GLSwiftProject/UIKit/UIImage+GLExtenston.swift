@@ -1,9 +1,9 @@
 //
-//  GLUIImageExtenston.swift
+//  UIImage+GLExtenston.swift
 //  GLSwiftProject
 //
-//  Created by 郭磊 on 2018/11/6.
-//  Copyright © 2018 郭磊. All rights reserved.
+//  Created by 郭磊 on 2019/1/18.
+//  Copyright © 2019 郭磊. All rights reserved.
 //
 
 import UIKit
@@ -48,7 +48,7 @@ extension UIImage {
     public func aspectWidthForHeight(_ height:CGFloat) -> CGFloat {
         return (height * self.size.width) / self.size.height
     }
-
+    
     ///返回一个裁剪后的图片
     public func croppedImage(_ bound:CGRect) -> UIImage? {
         guard self.size.width > bound.origin.x else {
