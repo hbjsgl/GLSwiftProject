@@ -155,7 +155,7 @@ extension UIButton {
     ///   - right: 右
     ///   - bottom: 下
     ///   - left: 左
-    func setEnlargeEdge(top:CGFloat,right:CGFloat,bottom:CGFloat,left:CGFloat) {
+    func gl_setEnlargeEdge(top:CGFloat,right:CGFloat,bottom:CGFloat,left:CGFloat) {
         
         self.topEdge = top
         self.rightEdge = right
@@ -192,7 +192,7 @@ extension UIButton {
     /// - Parameters:
     ///   - imageWidth: imageWidth
     ///   - space: image和button的间距
-    func setImageTheLeftWithTitleRight(imageWidth:CGFloat,space:CGFloat) {
+    func gl_setImageTheLeftWithTitleRight(imageWidth:CGFloat,space:CGFloat) {
         
         let image = UIImage.scaleTo(image: imageView!.image!, width: imageWidth, height: imageWidth)
         setImage(image, for: .normal)
@@ -209,11 +209,11 @@ extension UIButton {
     ///   - imageWidth: imageWidth
     ///   - space: image和button的间距
     ///   - buttonWidth: buttonWidth
-    func setImageTheLeftWithTitleRightAndAlignmentForLeft(imageWidth:CGFloat,space:CGFloat,buttonWidth:CGFloat) {
+    func gl_setImageTheLeftWithTitleRightAndAlignmentForLeft(imageWidth:CGFloat,space:CGFloat,buttonWidth:CGFloat) {
         let image = UIImage.scaleTo(image: imageView!.image!, width: imageWidth, height: imageWidth)
         setImage(image, for: .normal)
         
-        let titleLabelWidth = titleLabel?.text?.getTextWidth(font: (titleLabel?.font)!) ?? 0
+        let titleLabelWidth = titleLabel?.text?.gl_getTextWidth(font: (titleLabel?.font)!) ?? 0
         
         let spaceW = (buttonWidth - titleLabelWidth - imageWidth) / 2
         imageEdgeInsets = UIEdgeInsets(top: 0, left: -spaceW + space, bottom: 0, right: spaceW - space)
@@ -225,13 +225,13 @@ extension UIButton {
     /// - Parameters:
     ///   - imageWidth: imageWidth
     ///   - space: space
-    func setImageTheTopWithTitleBottom(imageWidth:CGFloat, space:CGFloat) {
+    func gl_setImageTheTopWithTitleBottom(imageWidth:CGFloat, space:CGFloat) {
         
         let image = UIImage.scaleTo(image: imageView!.image!, width: imageWidth, height: imageWidth)
         setImage(image, for: .normal)
         
         //布局界面
-        let titleLabelWidth = titleLabel?.text?.getTextWidth(font: (titleLabel?.font)!) ?? 0
+        let titleLabelWidth = titleLabel?.text?.gl_getTextWidth(font: (titleLabel?.font)!) ?? 0
         let labelHeight = CGFloat((self.titleLabel?.font.pointSize)!)
         
         imageEdgeInsets = UIEdgeInsets(top: -labelHeight-space/2, left: 0, bottom: 0, right: -titleLabelWidth)
