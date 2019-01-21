@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GLSwiftProject"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "swift版本自用框架"
   s.swift_version = "4.2"
   s.description  = "swift版本自用框架，内容主要是几个extension类，后期慢慢拓展开来，便于项目快速创建"
