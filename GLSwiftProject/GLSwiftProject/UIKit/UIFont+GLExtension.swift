@@ -1,14 +1,15 @@
 //
-//  UIFontExtension.swift
+//  UIFont+GLExtension.swift
 //  GLSwiftProject
 //
-//  Created by 郭磊 on 2018/11/27.
-//  Copyright © 2018 郭磊. All rights reserved.
+//  Created by 郭磊 on 2019/2/27.
+//  Copyright © 2019 郭磊. All rights reserved.
 //
 
 import UIKit
 
 let Font_8 = UIFont.systemFont(ofSize: 8)
+let Font_9 = UIFont.systemFont(ofSize: 9)
 let Font_10 = UIFont.systemFont(ofSize: 10)
 let Font_11 = UIFont.systemFont(ofSize: 11)
 let Font_12 = UIFont.systemFont(ofSize: 12)
@@ -45,23 +46,23 @@ let Font_Bold_26 = UIFont.boldSystemFont(ofSize: 26)
 let Font_Bold_25 = UIFont.boldSystemFont(ofSize: 25)
 
 extension UIFont {
-    public class func pingFangMediumFont(size: CGFloat) -> UIFont {
+    public class func gl_pingFangMediumFont(size: CGFloat) -> UIFont {
         return UIFont.init(name: "PingFang-SC-Medium", size: size) ?? UIFont.init()
     }
     
-    public class func pingFangTextFont(size: CGFloat) -> UIFont {
+    public class func gl_pingFangTextFont(size: CGFloat) -> UIFont {
         return UIFont.init(name: "PingFang-SC-Regular", size: size) ?? UIFont.init()
     }
-    public class func pingFangBoldFont(size: CGFloat) -> UIFont {
+    public class func gl_pingFangBoldFont(size: CGFloat) -> UIFont {
         return UIFont.init(name: "PingFang-SC-Bold", size: size) ?? UIFont.init()
     }
-    public class func pingFangHeavyFont(size: CGFloat) -> UIFont {
+    public class func gl_pingFangHeavyFont(size: CGFloat) -> UIFont {
         return UIFont.init(name: "PingFang-SC-Heavy", size: size) ?? UIFont.init()
     }
-    public class func AppleGothicFont(size: CGFloat) -> UIFont {
+    public class func gl_AppleGothicFont(size: CGFloat) -> UIFont {
         return UIFont.init(name: "AppleGothic", size: size) ?? UIFont.init()
     }
-    public class func HelveticaNeueFont(size: CGFloat) -> UIFont {
+    public class func gl_HelveticaNeueFont(size: CGFloat) -> UIFont {
         return UIFont.init(name: "HelveticaNeue-Light", size: size) ?? UIFont.init()
     }
 }

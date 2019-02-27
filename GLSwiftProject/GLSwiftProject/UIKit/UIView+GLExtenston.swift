@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    public func addSubViews(_ views:[UIView]) {
+    public func gl_addSubViews(_ views:[UIView]) {
         
         views.forEach {
             [weak self] eachView in

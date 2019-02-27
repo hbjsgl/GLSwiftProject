@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		690CCA7A21ACE2D30082B684 /* GLButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690CCA7921ACE2D30082B684 /* GLButtonExtension.swift */; };
-		690CCA7C21ACE5480082B684 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690CCA7B21ACE5480082B684 /* UIFontExtension.swift */; };
+		69313655222669DC004DF938 /* UIFont+GLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69313654222669DC004DF938 /* UIFont+GLExtension.swift */; };
 		6937601C21F17E7E00EDAEEE /* UIView+GLExtenston.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937601B21F17E7E00EDAEEE /* UIView+GLExtenston.swift */; };
 		6937602021F17EC500EDAEEE /* UIColor+GLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937601F21F17EC500EDAEEE /* UIColor+GLExtension.swift */; };
 		6937602221F17EEB00EDAEEE /* UIImage+GLExtenston.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937602121F17EEB00EDAEEE /* UIImage+GLExtenston.swift */; };
@@ -42,8 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		690CCA7921ACE2D30082B684 /* GLButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLButtonExtension.swift; sourceTree = "<group>"; };
-		690CCA7B21ACE5480082B684 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		69313654222669DC004DF938 /* UIFont+GLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+GLExtension.swift"; sourceTree = "<group>"; };
 		6937601B21F17E7E00EDAEEE /* UIView+GLExtenston.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GLExtenston.swift"; sourceTree = "<group>"; };
 		6937601F21F17EC500EDAEEE /* UIColor+GLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+GLExtension.swift"; sourceTree = "<group>"; };
 		6937602121F17EEB00EDAEEE /* UIImage+GLExtenston.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+GLExtenston.swift"; sourceTree = "<group>"; };
@@ -106,6 +104,7 @@
 				6937602121F17EEB00EDAEEE /* UIImage+GLExtenston.swift */,
 				6937602321F17F1000EDAEEE /* UILabel+GLExtension.swift */,
 				6937602521F17F3400EDAEEE /* UIButton+GLExtension.swift */,
+				69313654222669DC004DF938 /* UIFont+GLExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -167,8 +166,6 @@
 			children = (
 				6937600E21F16EAC00EDAEEE /* UIKit */,
 				6937600D21F16E3D00EDAEEE /* Foundation */,
-				690CCA7921ACE2D30082B684 /* GLButtonExtension.swift */,
-				690CCA7B21ACE5480082B684 /* UIFontExtension.swift */,
 			);
 			path = GLSwiftProject;
 			sourceTree = "<group>";
@@ -306,14 +303,13 @@
 			files = (
 				6937602821F1D5CA00EDAEEE /* String+GLExtension.swift in Sources */,
 				6937602021F17EC500EDAEEE /* UIColor+GLExtension.swift in Sources */,
-				690CCA7C21ACE5480082B684 /* UIFontExtension.swift in Sources */,
 				6937602421F17F1000EDAEEE /* UILabel+GLExtension.swift in Sources */,
 				69FAF95321913B0000E42DE2 /* ViewController.swift in Sources */,
 				6937601C21F17E7E00EDAEEE /* UIView+GLExtenston.swift in Sources */,
 				69FAF95121913B0000E42DE2 /* AppDelegate.swift in Sources */,
+				69313655222669DC004DF938 /* UIFont+GLExtension.swift in Sources */,
 				6937602621F17F3400EDAEEE /* UIButton+GLExtension.swift in Sources */,
 				6937602221F17EEB00EDAEEE /* UIImage+GLExtenston.swift in Sources */,
-				690CCA7A21ACE2D30082B684 /* GLButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

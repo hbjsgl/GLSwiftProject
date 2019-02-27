@@ -10,27 +10,27 @@ import UIKit
 
 extension UIColor {
     
-    static func colorWithRGBA(r:CGFloat,g:CGFloat,b:CGFloat,alpha:CGFloat) -> UIColor {
+    static func gl_colorWithRGBA(r:CGFloat,g:CGFloat,b:CGFloat,alpha:CGFloat) -> UIColor {
         
         return self.init(red:r / 255.0,green:g/255.0,blue:b / 255.0,alpha:alpha)
     }
     
-    static func colorWithRGB(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
-        return colorWithRGBA(r: r, g: g, b: b, alpha: 1.0)
+    static func gl_colorWithRGB(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
+        return gl_colorWithRGBA(r: r, g: g, b: b, alpha: 1.0)
     }
     
-    static func colorWithHex(hex:Int,alpha:CGFloat) -> UIColor {
+    static func gl_colorWithHex(hex:Int,alpha:CGFloat) -> UIColor {
         return UIColor.init(red:CGFloat((hex >> 16) & 0xFF) / 255.0,green:CGFloat((hex >> 8) & 0xFF) / 255.0,blue:CGFloat(hex & 0xFF) / 255.0,alpha:alpha)
     }
     
     ///hex
     static func colorWithHex(hex:Int) -> UIColor {
-        return UIColor.colorWithHex(hex:hex,alpha:1.0)
+        return UIColor.gl_colorWithHex(hex:hex,alpha:1.0)
     }
     
     ///随机色
-    static func randomColor() -> UIColor {
-        return colorWithRGB(r: CGFloat(arc4random_uniform(256)), g: CGFloat(arc4random_uniform(256)), b: CGFloat(arc4random_uniform(256)))
+    static func gl_randomColor() -> UIColor {
+        return gl_colorWithRGB(r: CGFloat(arc4random_uniform(256)), g: CGFloat(arc4random_uniform(256)), b: CGFloat(arc4random_uniform(256)))
     }
     
     func image() -> UIImage {
